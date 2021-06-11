@@ -13,6 +13,7 @@
 
 .quotes__details-episode div {
 	padding: 20px 0;
+	max-width: 1000px;
 }
 
 .season__no,

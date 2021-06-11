@@ -2,20 +2,20 @@ import React from "react";
 import "../styles/details.css";
 import rick from "../assets/images/rick.svg";
 
-const QuoteDetail = () => {
+const QuoteDetail = ({ quote }: any) => {
 	return (
 		<div className='quotes__details'>
 			<div className='quotes__details-episode'>
-				<h3 className='character__name'>- Rick Sanchez</h3>
+				<h3 className='character__name'>- {quote.name}</h3>
 				<div>
 					<p className='season__no'>
-						Season no :<span>1</span>
+						Season no :<span>{quote.seasonno}</span>
 					</p>
 					<p className='episode__no'>
-						Episode no <span>1</span>
+						Episode no <span>{quote.episodeno}</span>
 					</p>
 					<p className='episode__name'>
-						Episode name : <span>pilot</span>
+						Episode name : <span>{quote.episodename}</span>
 					</p>
 				</div>
 			</div>

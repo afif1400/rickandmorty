@@ -1,14 +1,13 @@
 import "../styles/quote.css";
 import React from "react";
 
-const Quote = () => {
+type QuoteProps = {
+	quotetext: string;
+};
+const Quote: React.FC<QuoteProps> = ({ quotetext }) => {
 	return (
 		<div className='quote'>
-			<p>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloremque
-				ex quam in provident aperiam tenetur voluptas corrupti aspernatur
-				reiciendis.
-			</p>
+			<p>{quotetext}</p>
 		</div>
 	);
 };

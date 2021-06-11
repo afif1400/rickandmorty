@@ -3,14 +3,14 @@ import Quote from "../components/Quote";
 import QuoteDetail from "../components/QuoteDetail";
 import axios from "axios";
 
-const LandingPage: React.FC = (): JSX.Element => {
+const Morty = () => {
 	const [quote, setQuote] = useState({
 		line: "",
 	});
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8888/,netlify/functions/getquote")
+			.get("http://localhost:8888/,netlify/functions/getquoteMorty")
 			.then((response) => {
 				console.log(response.data);
 				setQuote(response.data);
@@ -24,4 +24,4 @@ const LandingPage: React.FC = (): JSX.Element => {
 	);
 };
 
-export default LandingPage;
+export default Morty;

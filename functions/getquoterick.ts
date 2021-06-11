@@ -17,7 +17,7 @@ const getData = async () => {
 		const data = await client
 			.db("rickandmorty")
 			.collection("quotes")
-			.find()
+			.find({ name: "Rick" })
 			.limit(-1)
 			.skip(index)
 			.next();

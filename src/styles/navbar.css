@@ -37,8 +37,8 @@
 .navigation__item {
 	background: #b9b7b7;
 	padding: 0 16px;
-	font-size: 1.4rem;
-	font-weight: 500;
+	font-size: 1.1rem;
+	font-weight: 600;
 	color: #0d0c0c;
 }
 
@@ -76,7 +76,8 @@
 		list-style: none;
 	}
 	.navigation__item {
-		opacity: 0.8;
+		/* opacity: 0.8; */
+		text-transform: uppercase;
 		display: inline-block;
 	}
 	.navigation__item:hover {

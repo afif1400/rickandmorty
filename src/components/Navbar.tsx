@@ -22,6 +22,9 @@ const Navbar: React.FC = () => {
 					className={toggle ? `navigation navigation--visible` : `navigation`}
 				>
 					<li className='navigation__item'>
+						<Link to='/'>Home</Link>
+					</li>
+					<li className='navigation__item'>
 						<Link to='/rick'>Rick</Link>
 					</li>
 					<li className='navigation__item'>
