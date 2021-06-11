@@ -1,0 +1,12 @@
+.quote {
+	font-family: var(--font-family);
+	font-size: 5vw;
+	font-weight: 700;
+	padding: 0 5%;
+}
+
+@media (min-width: 800px) {
+	.quote > p {
+		font-size: 3vw;
+	}
+}

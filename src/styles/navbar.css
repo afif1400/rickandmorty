@@ -2,11 +2,11 @@
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
-	background: #232536;
+	background: #b9b7b7;
 	position: fixed;
 	top: 0;
 	height: 40px;
-	color: #fff;
+	color: #0d0c0c;
 	width: 100%;
 	line-height: 40px;
 	z-index: 999;
@@ -15,6 +15,11 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 16px;
+}
+
+.page-header__logo {
+	font-size: 1.4rem;
+	font-weight: 600;
 }
 .page-header__toggle {
 	font-size: 2em;
@@ -27,15 +32,19 @@
 	overflow: hidden;
 	transition: 0.7s;
 	width: 100%;
+	list-style: none;
 }
 .navigation__item {
-	background: #232536;
+	background: #b9b7b7;
 	padding: 0 16px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	color: #0d0c0c;
 }
 
 .navigation__item a {
 	text-decoration: none;
-	color: #fff;
+	color: #0d0c0c;
 }
 
 .navigation--visible {
@@ -64,6 +73,7 @@
 		width: 100%;
 		opacity: 1;
 		height: auto;
+		list-style: none;
 	}
 	.navigation__item {
 		opacity: 0.8;

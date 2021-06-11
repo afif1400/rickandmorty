@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
 	return (
 		<div className='page-header'>
 			<div className='page-header__top'>
-				<div className='page-header__logo'>Rick and Morty Quotes</div>
+				<div className='page-header__logo'>Quotes</div>
 				<div className='page-header__toggle' onClick={() => toggleMenu()}>
 					☰
 				</div>
@@ -21,10 +21,6 @@ const Navbar: React.FC = () => {
 					id='navigation'
 					className={toggle ? `navigation navigation--visible` : `navigation`}
 				>
-					<li className='navigation__item'>
-						<Link to='/'></Link>
-						Home
-					</li>
 					<li className='navigation__item'>
 						<Link to='/rick'>Rick</Link>
 					</li>

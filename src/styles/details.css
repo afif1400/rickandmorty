@@ -1,0 +1,61 @@
+.quotes__details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-between;
+	padding: 0px 5%;
+}
+
+.character__name {
+	margin-top: 0;
+	font-size: 5vw;
+}
+
+.quotes__details-episode div {
+	padding: 20px 0;
+}
+
+.season__no,
+.episode__no,
+.episode__name {
+	font-size: 4vw;
+	font-weight: 500;
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+.season__no span,
+.episode__no span,
+.episode__name span {
+	font-weight: 700;
+	margin-left: 10px;
+}
+
+.quotes__details-imgBx {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.quotes__details-imgBx img {
+	object-fit: cover;
+	width: 100%;
+}
+
+@media (min-width: 800px) {
+	.character__name {
+		font-size: 2vw;
+	}
+	.season__no,
+	.episode__no,
+	.episode__name {
+		font-size: 2vw;
+	}
+
+	.quotes__details-episode div {
+		padding: 20px 5rem;
+	}
+
+	.quotes__details-imgBx {
+		margin: 0;
+	}
+}
