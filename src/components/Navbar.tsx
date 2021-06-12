@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 
+// import Swiper core and required modules
+
 const Navbar: React.FC = () => {
 	const [toggle, setToggle] = useState(false);
 
@@ -28,7 +30,7 @@ const Navbar: React.FC = () => {
 						<Link to='/rick'>Rick</Link>
 					</li>
 					<li className='navigation__item'>
-						<Link to='/rick'>Morty</Link>
+						<Link to='/morty'>Morty</Link>
 					</li>
 				</ul>
 			</nav>

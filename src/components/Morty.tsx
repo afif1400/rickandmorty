@@ -10,7 +10,7 @@ const Morty = () => {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8888/,netlify/functions/getquoteMorty")
+			.get("http://localhost:8888/,netlify/functions/getQuoteMorty")
 			.then((response) => {
 				console.log(response.data);
 				setQuote(response.data);
